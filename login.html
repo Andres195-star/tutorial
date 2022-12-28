@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="img/logo.jpg" alt="logo"></div>
+       <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">contact us</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="allcourse.html">Courses</a></li>
+       </ul>
+       <div class="search">
+     <input type="text" name="search" placeholder="Search">
+    <button>Search</button>
+    </div>
+    </nav>
+    <div class="web-title">
+        <h4>Login/Register</h4>
+        <h5>Home/ Login</h5>
+    </div>
+    <div class="content-center">
+        <div class="content-login">
+            <h4>Login</h4>
+            <ul class="input-container">
+                <li>
+                    <label>Your Email  Address*</label>
+                    <input type="text" placeholder="Enter Your Email Address" class="input1">
+                </li>
+                <li>
+                    <label style="top:79%;"> Enter Your password*</label>
+                    <input type="text" placeholder="Your Password" class="input1">
+                </li>
+                <br>
+                Remember me?
+                <button class="login">Login</button>
+            </ul>
+        </div>
+        <div class="content-register">
+            <h4>Register</h4><br>
+            <h5 style="font-size:14px;">Please insert your information correctly!Thank you.</h5>
+            <ul class="input-container1">
+                <li>
+                    <label style="top:64%;">Your Email  Address*</label>
+                    <input type="text" placeholder="Enter Your Email Address" class="input1">
+                </li>
+                <li>
+                    <label style="top:79%;"> User Name*</label>
+                    <input type="text" placeholder="Your Password" class="input2">
+                </li>
+                <li>
+                    <label style="top:93%;"> Enter Your Password*</label>
+                    <input type="text" placeholder="Your Password" class="input">
+                </li>
+                <li>
+                    <label style="top:635px;"> Comfirm Your password*</label>
+                    <input type="text" placeholder="Your Password" class="input">
+                </li>
+                <br>
+                Want to becomme instructor?
+                <button class="register">Register</button>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <footer>
+        <div class="npi">
+          <h3>New Pathway Institute</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
+               Dolorem, nam officiis et inventore est in illo asperiores<br>
+                incidunt. Laboriosam quo, delectus quas nemo nobis blanditiis<br>
+                 neque et. Hic, repellendus modi.</p>
+        </div><hr>
+        <div class="team">
+          <h3>Our Project Team</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
+               Dolorem, nam officiis et inventore est in illo asperiores<br>
+                incidunt. Laboriosam quo, delectus quas nemo nobis blanditiis<br>
+                 neque et. Hic, repellendus modi.</p>
+        </div><hr>
+        <div class="Address">
+          <h3>Our Address</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
+               Dolorem, nam officiis et inventore est in illo asperiores<br>
+                incidunt. Laboriosam quo, delectus quas nemo nobis blanditiis<br>
+                 neque et. Hic, repellendus modi.</p>
+        </div>
+      </footer>
+      <hr>
+      <div class="bc" style="background-color: black;width:100%;text-align: center;color:white;padding:40px 0px;">
+        <ul><li>All right Reserve by Andres,NPI</li><li><a href="privacy.html">Privicy Policy,Term & Condition</a></li></ul>
+      </div>
+      <script>
+        const btnlogin = document.querySelector('.login')
+        const btnregister = document.querySelector('.register')
+       
+        btnlogin.addEventListener('mouseover',function(){
+            btnlogin.style.backgroundColor = 'rgb(24,14,35)'
+            btnlogin.classList.add('register-style')
+        })
+        btnlogin.addEventListener('mouseout',function(){
+            btnlogin.style.backgroundColor = 'rgb(255,0,81)'
+            btnlogin.classList.remove('register-style')
+        })
+     
+      btnregister.addEventListener('mouseover',function(){
+        btnregister.style.backgroundColor = 'rgb(24,14,35)'
+        btnregister.classList.add('login-style')
+      })
+      btnregister.addEventListener('mouseout',function(){
+        btnregister.style.backgroundColor = 'rgb(255,0,81)'
+        btnregister.classList.remove('login-style')
+      })
+      </script>
+</body>
+</html>

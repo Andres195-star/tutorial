@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider (JS)</title>
+    <style>
+        .slider-container{
+            border: 5px solid aqua;
+            width:80vw;
+            margin: 0 auto;
+            height: 40vh;
+            max-width: 88rem;
+            position: relative;
+            border-radius: 0.5rem;
+          
+            margin-top: 4rem;
+        }
+        .slide{
+            position: absolute;
+            width:100%;
+            height: 100%;
+            background-color: teal;
+            color:tomato;
+            display: grid;
+            place-items: center;
+            transition: all 0.5s ease-in-out;
+            text-align: center;
+        }
+        .slide-img{
+            height: 100%;
+            object-fit: cover;
+        }
+        .slide h1{
+            font-size: 5rem;
+        }
+        /* .slide:nth-child(1){
+            left:0;
+        }
+        .slide:nth-child(2){
+            left:100%;
+        }
+        .slide:nth-child(3){
+            left: 200%;
+        }
+        .slide:nth-child(4){
+            left: 300%;
+        }
+        .slide{
+            transform: translateX(-300%);
+        } */
+        .btn-container{
+              background-color: red;
+              position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="slide">
+            <img src="img/cyber.jpg" class="slide-img" alt="">
+            <h1>1</h1>
+        </div>
+        <div class="slide">
+          
+            <h1>2</h1>
+        </div>
+        <div class="slide">
+       
+            <h1>3</h1>
+        </div>
+        <div class="slide">
+            <div>
+            <img src="img/lang.jpg" class="person-img" alt="">
+            <h4>suzan doe</h4>
+            <h1>4</h1>
+        </div>
+        </div>
+        
+    </div>
+    <div class="btn-container">
+        <button type="button" class="prevBtn">
+            prev
+        </button>
+        <button type="button" class="nextBtn">
+            nextBtn
+        </button>
+    </div>
+    <script>
+        const slides = document.querySelectorAll('.slides')
+        const nextBtn = document.querySelector('.nextBtn')
+        const prevBtn = document.querySelector('.prevBtn')
+        slides.forEach(function(slide,index){
+            slide.style.left = `${index * 100}%`
+        })
+        let counter = 0;
+        nextBtn.addEventListener('click',function(){
+            counter++;
+            console.log(slides);
+            carousel()
+        })
+        prevBtn.addEventListener('click',function(){
+            counter--;
+            carousel()
+        })
+        function carousel(){
+            slides.forEach(function(slide){
+                slide.style.transform = 'translateX(-${counter * 100}%)'
+            })
+        }
+    </script>
+</body>
+</html>

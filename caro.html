@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <title>Carousel</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .container,.container2,.container3{
+        width:100%;
+        height: 50%;
+        background-color: gray;
+        display: flex;
+        position: absolute;
+        visibility: hidden;
+        transform: translateY(100px);
+        transition: all 1s ease;
+      }
+     .img{
+        width:50%;
+        height: 100%;
+      }
+      .img img{
+        width:100%;
+        height: 100%;
+      }
+       .about{
+        width: 50%;
+        height: 100%;
+      }
+      .show-one{
+        visibility: visible;
+        transform: translateY(0px);
+      }
+      .show-two{
+        visibility: visible;
+        transform: translateY(0px);
+      }
+      .show-three{
+        visibility: visible;
+        transform: translateY(0px);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img">
+        <img src="img/stones.jpg">
+      </div>
+      <div class="about">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Quisquam quibusdam, temporibus repellat natus alias dolorum totam
+         fuga delectus voluptates cum! Ex itaque expedita ipsa obcaecati
+          repudiandae eum accusamus eos quo.
+      </div>
+    </div>
+    <div class="container2">
+      <div class="img">
+        <img src="img/stones.jpg">
+      </div>
+      <div class="about">
+        FIRST, amet consectetur adipisicing elit. 
+        Quisquam quibusdam, temporibus repellat natus alias dolorum totam
+         fuga delectus voluptates cum! Ex itaque expedita ipsa obcaecati
+          repudiandae eum accusamus eos quo.
+      </div>
+    </div>
+    <div class="container3">
+      <div class="img">
+        <img src="img/stones.jpg">
+      </div>
+      <div class="about">
+        SECOND, amet consectetur adipisicing elit. 
+        Quisquam quibusdam, temporibus repellat natus alias dolorum totam
+         fuga delectus voluptates cum! Ex itaque expedita ipsa obcaecati
+          repudiandae eum accusamus eos quo.
+      </div>
+    </div>
+    <div class="btn" style="background-color: red;padding-top: 30%;">
+      <button class="one">Web Design</button>
+      <button class="two">Networking</button>
+      <button class="three">Multimedia</button>
+    </div>
+  </body>
+  <script>
+    const conone = document.querySelector('.container')
+    const contwo = document.querySelector('.container2')
+const conthree = document.querySelector('.container3')
+ const btn1 = document.querySelector('.one')
+ const btn2 = document.querySelector('.two')
+ const btn3 = document.querySelector('.three')
+ btn1.addEventListener('click', function(){
+    conone.classList.add('show-one')
+    contwo.classList.remove('show-two')
+    conthree.classList.remove('.show-three')
+ })
+ btn2.addEventListener('click', function(){
+    contwo.classList.add('show-two')
+    conone.classList.remove('show-one')
+    conthree.classList.remove('show-three')
+ })
+ btn3.addEventListener('click', function(){
+    conthree.classList.add('show-three')
+    contwo.classList.remove('show-two')
+    conone.classList.remove('show-one')
+
+ })
+ 
+  </script>
+</html>

@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(246, 244, 241);
+}
+nav{
+    width:100%;
+    height:70px;
+    background-color: white;
+    justify-content: space-between;
+  
+}
+nav ul{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding:25px 20px;
+    gap:30px;
+    list-style-type: none;
+
+}
+
+nav ul>li a{
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+/* nav ul>li a:hover{
+    color:blue;
+   border-bottom: 3px solid violet;
+} */
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background: #CD5C5C;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+nav .logo{
+    width:50px;
+    height: 50px;
+    position: absolute;
+    top:10px;
+    left: 50px;
+}
+.logo img{
+    width:100%;
+    height: 100%;
+}
+
+nav .search{
+    top:20px;
+    right: 10px;
+    position: absolute;
+
+}
+.search input{
+    padding: 6px 30px;
+    outline: none;
+}
+.search button{
+    padding: 6px;
+    background-color: green;
+    outline: none;
+    border: none;
+}
+.header{
+    width:100%;
+    height: 700px;
+    position: relative;
+}
+.header .mainhead{
+    display: flex;
+    background-color: white;
+    border: 1px solid gray;
+}
+.mainhead .mainidea{
+    width:50%;
+    height: 100%;
+    padding-left: 20px;
+}
+.maintitle{
+    transition: all 1s ease;
+    transform: translateY(20px);
+}
+.mainhead .mainimage{
+    width:50%;
+    height: 100%;
+}
+.mainidea .maintitle h3{
+    font-size: 33px;
+   margin-top: 50px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+.mainidea .maintitle h6{
+    font-size: 18px;
+}
+.mainidea #join{
+padding:7px 20px;
+background-color: rgb(255, 0, 81);
+color:white;
+border-radius: 20px;
+outline: none;
+border:1px solid whitesmoke;
+transition: all 0.5s ease-out ;
+}
+.webcard,.lancard,.kidcard{
+    width: 28%;
+    height: 70%;
+    position: absolute;
+    border: 2px solid whitesmoke;
+    top:75%;
+    left: 6%;
+    background-color: white;
+    transition: all 0.7s ease;
+}
+.lancard{
+    left: 37%;
+}
+.kidcard{
+    left: 68%;
+}
+.webcard .img img,.lancard .img img,.kidcard .img img{
+width: 100%;
+height: 100%;
+}
+.webcard .about,.lancard .about,.kidcard .about{
+    text-align: center;
+}
+.aboutus{
+    display: flex;
+    width: 100%;
+    height: 60%;
+    background-color: white;
+}
+.aboutus .aboutimg{
+    width:50%;
+    height: 100%;
+}
+.aboutus .aboutimg img{
+    width:100%;
+    height: 100%;
+}
+.aboutus .detil{
+    width:50%;
+    height: 100%;
+    
+}
+.detil .detitle{
+    margin-top: 60px;
+    font-size: 36px;
+    font-weight: 800;
+}
+.detil button{
+    padding:15px 25px;
+background-color: rgb(255, 0, 81);
+color:white;
+border-radius: 20px;
+outline: none;
+border:1px solid whitesmoke;
+transition: all 0.5s ease-in;
+}
+.popular{
+    display: flex;
+}
+#pimage{
+    border-radius: 50%;
+    transition: all 0.5s ease-out;
+}
+.pcourse,.pcourse1{
+    margin-left: 20px;
+    width:50%;
+    height: 150px;
+    background-color:white;
+    border-radius: 5px;
+    border: 0px solid black;
+    display: flex;
+}
+.pcourse .pimg,.pcourse1 .pimg {
+    width:100px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.pimg img{
+    width:130%;
+    height: 130%;
+    border-radius: 50%;
+}
+.pcourse .cours,.pcourse1 .cours{
+    width:60%;
+    height: 100%;
+    margin-left: 60px;
+    padding-top: 20px;
+}
+.pcourse .cours h4,.pcourse1 .cours h4{
+    font-size: 25px;
+    font-weight: 500;
+    color:rgb(9, 9, 57)
+}
+.courseone, .coursetwo{
+   margin-left: 20px;
+    width:50%;
+    height: 150px;
+    background-color:white;
+    border-radius: 5px;
+    border: 0px solid black;
+    display: flex;
+}
+#course{
+    transition: all 0.7s ease;
+}
+#imageone{
+    transition: all 0.7s ease;
+}
+#imagetwo{
+    transition: all 0.7s ease;
+}
+.courseone .pimg img,.coursetwo .pimg img{
+    width:130%;
+    height: 130%;
+    border-radius: 50%;
+}
+.courseone .pimg,.coursetwo .pimg{
+    width:100px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.courseone .cours,.coursetwo .cours{
+    width:60%;
+    height: 100%;
+    margin-left: 60px;
+    padding-top: 20px;
+}
+.courseone .cours h4,.coursetwo .cours h4{
+    font-size: 25px;
+    font-weight: 500;
+    color:rgb(9, 9, 57)
+}
+.viewcourse {
+    text-align: center;
+    padding:40px 20px;
+}
+.viewcourse button{
+    padding:15px 30px;
+    background-color: rgb(255, 0, 81);
+    color:white;
+    border-radius: 10px;
+    outline: none;
+    border:1px solid whitesmoke;
+    transition: all 0.5s ease;
+}
+.portiflo{
+    width:100%;
+    height:400px;
+    text-align: center;
+    justify-content: center;
+   position: relative;
+   background-color:white;
+}
+.one,.two,.three{
+    width:50%;
+    height: 300px;
+  background-color: wheat;
+    display: flex;
+    border: 2px solid black;
+    position: absolute;
+  left: 30%;
+  top:40px; 
+  visibility: hidden;
+  display:inline-flex;
+  transform: translateX(200px);
+  transition: all 0.8s ease-in-out;
+
+}
+.active{
+    display: inline-flex;
+    transform: translateX(0px);
+    visibility: visible;
+
+}
+.deactive{
+    display: inline-flex;
+    transform: translateX(-150px);
+    visibility: visible;
+}
+.portiflo .one .imge,.portiflo .two .imge,.portiflo .three .imge{
+    width:800px;
+    height: 100%;
+   background-color: red;
+    display: flex;
+border: 1px solid gray;
+}
+.one .imge img,.two .imge img,.three .imge img{
+    width: 100%;
+    height: 100%;
+}
+.one .quote,.two .quote,.three .quote{
+    padding-top: 20px;
+}
+.one .quote ul,.two .quote ul,.three .quote ul{
+    padding-left: 70px;
+}
+.one .quote ul>li,.two .quote ul>li,.three .quote ul>li{
+    padding-left: 20px;
+    font-size: 30px;
+    padding-top: 20px;
+}
+.portiflo .bottle{
+    width:500px;
+   
+    position: absolute;
+    top:80%;
+    left:33%;
+}
+.detil  .head{
+    width:500px;
+    height: 200px;
+    margin-top: 30px;
+}
+.detil .head ul{
+    justify-content: space-between;
+    display: flex;
+    padding:20px;
+    font-size: 20px;
+    list-style-type:none;
+}
+.detil .head ul>li>i {
+    color:rgb(236, 15, 104);
+    font-size: 30px;
+}
+.detil .head ul>li>h4 {
+    color:blue;
+    font-size: 15px;
+}
+.review{
+    width:100%;
+    height: 500px;
+    background-color: rgb(224, 220, 214);
+   
+}
+.review .content-center{
+    width:80%;
+    height: 350px;
+    background-color: white;
+    display: flex;
+    margin: auto;
+ 
+}
+.content-center .left-img{
+    width: 30%;
+    height: 100%;
+   
+    align-items: center;
+    text-align: center;
+position: relative;
+}
+.content-center .right-detil{
+    width:65%;
+    height: 100%;
+    border-left: 3px solid gray;
+}
+.left-img img{
+    width:40%;
+    height: 35%;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.left-img .next-btn{
+    position: absolute;
+    top:40%;
+    left: 70%;
+    font-size: 30px;
+    background-color: none;
+    border: none;
+outline: none;
+background-color: white;
+}
+.left-img .prev-btn{
+    position: absolute;
+    font-size: 30px;
+    top:40%;
+    left:26%;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+.left-img .social{
+    color:black;
+    font-size: 23px;
+
+}
+.social i{
+    color: rgb(255,0,82);
+    padding-left: 10px;
+}
+.upcoming{
+    width:100%;
+    height: 500px;
+    background-color: rgb(239, 236, 232);
+    display: flex;
+}
+.upcoming .up-card{
+    width:30%;
+    height: 350px;
+  border: 1px solid gray;
+    margin-left: 40px;
+    overflow: hidden;
+}
+.up-card .img img{
+    width:100%;
+    height:100%;
+    position: absolute;
+    transition: all 0.7s  ease;
+    opacity: 0.9;
+}
+.up-card .img{
+    width:100%;
+    height: 60%;
+    position: relative;
+    transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  background-color: blue;
+  z-index: 99;
+}
+.bc ul{
+    list-style-type: none;
+    justify-content: space-between;
+    display: flex;
+}
+.bc ul>li{
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.bc ul>li a{
+    text-decoration: none;
+    color:white;
+}

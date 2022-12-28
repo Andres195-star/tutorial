@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content {
+            display: none;
+        }
+        .tab-btn.active{
+            background-color: white;
+        }
+        .content.active{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="title">
+            <h2>About</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Eligendi explicabo repudiandae, necessitatibus enim molestias
+                tempore commodi, voluptate beatae in animi dignissimos accusantium,
+                excepturi quidem quas ab. Inventore praesentium cupiditate ullam!
+            </p>
+        </div>
+        <div class="about-center section-center">
+            <article class="about-img">
+                <img src="img/web.jpg" alt="about picture">
+            </article>
+            <article class="about">
+                <!--btn container-->
+               <div class="btn-container">
+                    <button class="tab-btn active" data-id="history">history</button>
+                    <button class="tab-btn" data-id="vision">vision</button>
+                    <button class="tab-btn" data-id="goals">goals</button>
+               </div>
+
+            </article>
+            <article class="about-content">
+                <!--single item-->
+                <div class="content active" id="history">
+                    <h4>history</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Sint aperiam saepe vero dolores soluta libero quidem sequi,
+                         inventore beatae, quos, odit praesentium laborum non eius!
+                          Autem dignissimos voluptate suscipit libero.
+                    </p>
+                </div>
+                  <!-- ennd single item-->
+                    <!--single item-->
+                <div class="content " id="vision">
+                    <h4>Vision</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                         Voluptas distinctio, sunt illo id aliquid omnis accusamus aspernatur 
+                         nemo excepturi error, beatae nihil quas. Omnis odit, officia obcaecati 
+                         eos animi quae.
+                    </p>
+                    <ul>
+                        <li>
+                            list item
+                        </li>
+                        <li>
+                            list item
+                        </li>
+                        <li>
+                            list item
+                        </li>
+                    </ul>
+                </div>
+                  <!-- ennd single item-->
+                    <!--single item-->
+                <div class="content" id="goals">
+                    <h4>Goals</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                         Maiores sequi optio sint nisi esse, eos animi iure quidem
+                          ullam quae a facere ad quasi unde labore ea assumenda doloribus dolorum?
+                    </p>
+                </div>
+                  <!-- ennd single item-->
+            </article>
+        </div>
+    </section>
+    <script>
+        const btns = document.querySelectorAll('.tab-btn')
+        const aout = document.querySelector('.about')
+        const articles = document.querySelectorAll('.content')
+
+        aout.addEventListener('click',function(e){
+            const id = e.target.dataset.id;
+            if(id){
+                //remove active from other buttons
+                btns.forEach(function(btn){
+                    btn.classList.remove('active');
+                    e.target.classList.add('active')
+                });
+                //hide other articles
+                articles.forEach(function(article){
+                    article.classList.remove('active')
+                })
+                const element = document.getElementById(id);
+                element.classList.add('active')
+            }
+        });
+
+    </script>
+</body>
+
+</html>

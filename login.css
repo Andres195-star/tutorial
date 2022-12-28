@@ -1,0 +1,96 @@
+.content-center{
+    width: 100%;
+    height: 600px;
+    background-color: aliceblue;
+ 
+    display: flex;
+}
+.content-login{
+    width: 40%;
+    height: 80%;
+    background-color: white;
+    border: 1px solid tomato;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding: 40px 40px;
+}
+.content-register{
+    width: 40%;
+    height: 90%;
+    background-color: white;
+    border: 1px solid tomato;
+    margin-left: 70px;
+    margin-top: 20px;
+    padding: 40px 0px 0px 40px;
+}
+.content-login ul{
+    list-style-type: none;
+    margin-top: 30px;
+    
+}
+.content-login ul>li input{
+   width: 90%;
+   height: 40px;
+   margin-top:50px;
+   padding: 10px;
+   outline: none;
+}
+.content-login ul>li label{
+    position: absolute;
+    top:64%;
+}
+.login{
+    width:80%;
+    margin-left: 20px;
+    margin-top: 30px;
+    background-color: rgb(255, 0, 81);
+    padding: 10px;
+    outline: none;
+    border: 1px solid slategray;
+    border-radius: 5px;
+    transition: all 0.7s ease;
+}
+.show-input{
+    border: 2px solid tomato;
+}
+.content-register ul{
+    list-style-type: none;
+    margin-top: 20px;
+}
+.content-register ul>li label{
+    position: absolute;
+}
+.content-register ul>li input{
+    width:80%;
+    height: 40px;
+    outline: none;
+    border: 1px solid gray;
+    padding: 10px;
+}
+.content-register ul>li{
+    margin-top: 45px;
+}
+.register{
+    width:80%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: rgb(255, 0, 81);
+    outline: none;
+    border: 1px solid slategray;
+    border-radius: 5px;
+    transition: all 0.7s ease;
+}
+.register-style{
+ 
+    color:white;
+  
+}
+.login-style{
+    background-color: rgb(24, 1435, blue);
+    COLOR:WHITE;
+}
+.content-register h4,.content-login h4{
+    font-size: 30px;
+    font-weight: 800;
+}
+

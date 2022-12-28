@@ -1,0 +1,214 @@
+.web-title{
+    width:100%;
+    height: 20%;
+    background-color: rgb(246, 244, 241);
+    text-align: center;
+  border: 0px solid black;
+}
+.web-title h4{
+    font-size: 36px;
+    font-weight: 899;
+    margin-top: 50px;
+}
+.web-title h5{
+    color:gray;
+    font-size: 20px;
+}
+.web-head{
+    width:100%;
+    height: 60%;
+    object-fit: fill;
+    object-position: center;
+}
+.web-head img{
+    width: 100%;
+    height: 100%;
+}
+.web-detil{
+    width:55%;
+    height: 80%;
+    background-color: white;
+    margin-left: 40px;
+}
+.web-detil .btn{
+    width:97.2%;
+    height: 50px;
+    background-color: antiquewhite;
+    margin-top: 30px;
+    margin-left:0px;
+    padding:20px 0px 10px 20px;
+}
+.web-detil .btn button{
+    padding:10px 20px;
+    background-color: none;
+    border: none;
+    outline: none;
+}
+.web-detil .detil{
+    width:55%;
+    height: 80%;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding: 0px 0px 10px 10px;
+    position: relative;
+
+}
+.web-detil .detil h4{
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+.description{
+    visibility: visible;
+    z-index: -10;
+}
+.show-descri{
+   visibility: hidden;
+ z-index: 10;
+
+}
+ .learn{
+    position:absolute;
+width:80%;
+top:5%;
+height: 100%;
+visibility: hidden;
+}
+.show-learn{
+    visibility: visible;
+}
+ .instructor{
+    position:absolute;
+    width:500px;
+    top:5%;
+    height: 80%;
+    display: flex;
+    padding: 10px 20px;
+visibility: hidden;
+}
+.show-instructor{
+    visibility: visible;
+}
+.instructor .container{
+    width:40%;
+    height: 150px;
+    margin-right: 10px;
+}
+.instructor .container img{
+    width:100%;
+    height: 100%;
+}
+.instructor .des{
+    width:60%;
+   
+}
+.feed{
+    width: 40%;
+    height: 745px;
+    background-color: white;
+    position: absolute;
+    left:59%;
+    top:60%;
+}
+.feed .img{
+    padding-left: 50px;
+    width:80%;
+    height: 40%;
+    margin-top: 20px;
+}
+.feed img{
+    width:100%;
+    height: 100%;
+}
+.contain{
+    padding:20px 30px;
+    justify-content: end;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+.contain ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.contain ul>li{
+    padding: 10px 10px;
+}
+.btn-enrool{
+    text-align: center;
+    width:100%;
+    margin-top: 10px;
+}
+.btn-enrool button{
+    padding:13px 30px;
+    background-color:rgb(255,4, 81);
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 10px;
+    transition: all 0.7s ease;
+}
+.btn-show{
+    background-color: rgb(10, 20, 100);
+    color:white;
+}
+.btn-enrool a{
+    text-decoration: none;
+    color:rgb(219, 34, 59);
+    color:rgb(10, 20, 100);
+}
+footer{
+    width:100%;
+    background-color: black;
+    display: flex;
+}
+footer .npi,.team,.Address{
+    width: 30%;
+    color:white;
+    height: 100%;
+    margin: 20px 40px;
+}
+.morecourse{
+    display: flex;
+    width:100%;
+    height: 500px;
+}
+.morecourse .card1,.morecourse .card2,.morecourse .card3{
+    width: 30%;
+    height: 90%;
+    margin-top: 20px;
+    margin-left: 40px;
+    border: 1px solid black;
+    background-color: bisque;
+}
+.morecourse .card1 img,.morecourse .card2 img,.morecourse .card3 img{
+    width: 100%;
+    height: 100%;
+}
+.morecourse .card1 .img,.morecourse .card2 .img,.morecourse .card3 .img{
+    width: 100%;
+    height: 50%;
+}
+.card1 .more,.card2 .more,.card3 .more{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.more ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.privacy{
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    
+}
+.privacy .detil{
+    width: 50%;
+    height: 100%;
+    padding-left: 30px;
+    background-color: white;
+    
+    
+}
